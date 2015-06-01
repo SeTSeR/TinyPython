@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-import input, output
-output.emit(input.Look)
+import input, output, errors
+errors.expected('Integer')
 input.end()
