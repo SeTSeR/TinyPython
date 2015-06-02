@@ -1,16 +1,20 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-import sys
+import sys, scanner
 
 Look = ''
 
 def getchar():
-    return filep.read(1)
+    char = filep.read(1)
+    print(char)
+    print(scanner.isAddop(char))
+    return char
 
 def end():
     filep.close()
 
-def init(filename):
-    filep = open(filename)
-    Look = getchar()
+#filename = sys.argv[1]
+#filep = open(filename)
+filep = sys.stdin
+Look = getchar()

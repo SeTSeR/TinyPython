@@ -7,7 +7,7 @@ def factor():
 
 def signedfactor():
     sign = input.Look;
-    if(isAddop(input.Look)):
+    if(scanner.isAddop(input.Look)):
         input.look = input.getchar()
     result = factor()
     if(sign=='-'):

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-import input, scanner, parser, sys, errors
+import scanner, parser, sys, errors
 
 def printhelp():
     print('./main.py program\n')
@@ -13,6 +13,6 @@ if(len(sys.argv)<2):
 elif((sys.argv[1]=="--help") or (sys.argv[1]=='-h')):
     printhelp()
 else:
-    filename = sys.argv[1]
-    input.init(filename)
+    import input;
+    print(parser.signedfactor())
     input.end()

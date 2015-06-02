@@ -13,13 +13,13 @@ def isAlNum(s):
     return s.isalnum()
 
 def isAddop(s):
-    return ((s.index('+')!=(-1)) or (s.index('-')!=(-1)))
+    return (s in ['+', '-']) 
 
 def isMulop(s):
-    return ((s.index('*')!=(-1)) or (s.index('//')!=(-1)))
+    return (s in ['*', '/']) 
 
 def match(x):
-    if(x.index(input.Look)==(-1)):
+    if not (input.Look == x):
         errors.expected(x)
     else:
         input.Look = input.getchar()
@@ -36,10 +36,10 @@ def getname():
 
 def getnum():
     num = 0;
-    if not isDigit(input.Look):
+    if not input.Look.isdigit(): 
         errors.expected('Number')
     else:
-        while(isDigit(input.Look)):
+        while input.Look.isdigit():
             num = num*10 + int(input.Look)
             input.Look = input.getchar()
     return num
