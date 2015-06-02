@@ -50,7 +50,7 @@ def factor():
         scanner.match(')')
         return result
     else:
-        errors.error('Unrecognized character: '+Look)
+        errors.error('Unrecognized character: '+input.Look)
 
 def signedfactor():
     sign = input.Look;
