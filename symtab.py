@@ -3,7 +3,7 @@
 vartab = {}
 
 def addvar(name, value):
-    if (vartab.get(name)=='None'):
+    if (vartab.get(name,'None')=='None'):
         vartab[name] = value
     else:
         import errors

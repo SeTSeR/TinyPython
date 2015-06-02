@@ -2,6 +2,17 @@
 # -*- coding: UTF-8 -*-
 import input, scanner, errors, semantic
 
+def expression():
+    result = signedfactor()
+    while(scanner.isAddop(input.Look)):
+        if(input.Look=='+'):
+            scanner.match('+')
+            result = result + factor()
+        elif(input.Look=='-'):
+            scanner.match('-')
+            result = result - factor()
+    return result
+
 def factor():
     if(input.Look.isdigit()):
         return semantic.getnumber()
