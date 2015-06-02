@@ -13,6 +13,5 @@ if(len(sys.argv)<2):
 elif((sys.argv[1]=="--help") or (sys.argv[1]=='-h')):
     printhelp()
 else:
-    import input;
-    print(parser.signedfactor())
+    import input, symtab;
     input.end()

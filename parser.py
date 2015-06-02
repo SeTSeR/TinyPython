@@ -3,7 +3,12 @@
 import input, scanner, errors, semantic
 
 def factor():
-    return semantic.getnumber()
+    if(input.Look.isdigit()):
+        return semantic.getnumber()
+    elif(input.Look.isalpha()):
+        return semantic.loadvar(scanner.getname())
+    else:
+        errors.error('Unrecognized character: '+Look)
 
 def signedfactor():
     sign = input.Look;
