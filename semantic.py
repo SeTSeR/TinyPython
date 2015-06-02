@@ -23,3 +23,7 @@ def multiply(value1, value2):
 
 def divide(value1, value2):
     return (value1/value2)
+
+def savevar(name, value):
+    import symtab
+    return symtab.addvar(name, value)

@@ -2,6 +2,12 @@
 # -*- coding: UTF-8 -*-
 import input, scanner, errors, semantic
 
+def assignment():
+    varname = scanner.getname()
+    scanner.match('=')
+    varvalue = expression()
+    semantic.savevar(varname, varvalue)
+
 def term():
     result = factor()
     while(scanner.isMulop(input.Look)):

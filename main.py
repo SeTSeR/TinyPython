@@ -14,5 +14,5 @@ elif((sys.argv[1]=="--help") or (sys.argv[1]=='-h')):
     printhelp()
 else:
     import input, symtab;
-    print(str(parser.expression()))
+    print(symtab.vartab.items())
     input.end()
