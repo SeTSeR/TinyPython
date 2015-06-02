@@ -8,7 +8,7 @@ def factor():
 def signedfactor():
     sign = input.Look;
     if(scanner.isAddop(input.Look)):
-        input.look = input.getchar()
+        input.Look = input.getchar()
     result = factor()
     if(sign=='-'):
         result = semantic.negate(result)

@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-import sys, scanner
+import sys
 
 Look = ''
 
 def getchar():
     char = filep.read(1)
-    print(char)
-    print(scanner.isAddop(char))
     return char
 
 def end():

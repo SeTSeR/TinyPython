@@ -1,8 +1,6 @@
 #!/bin/bash
 # -*- coding: UTF-8 -*-
 
-import input, errors
-
 def isAlpha(s):
     return s.isalpha()
 
@@ -19,12 +17,14 @@ def isMulop(s):
     return (s in ['*', '/']) 
 
 def match(x):
+    import input, errors
     if not (input.Look == x):
         errors.expected(x)
     else:
         input.Look = input.getchar()
 
 def getname():
+    import input, errors
     str = ''
     if not isAlpha(input.Look):
         errors.expected('Name')
@@ -35,6 +35,7 @@ def getname():
     return str
 
 def getnum():
+    import input, errors
     num = 0;
     if not input.Look.isdigit(): 
         errors.expected('Number')
