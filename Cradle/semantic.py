@@ -5,3 +5,6 @@ import scanner, output
 
 def getnumber():
     return scanner.getnum()
+
+def negate(toneg):
+    return toneg*(-1)
