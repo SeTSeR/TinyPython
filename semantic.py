@@ -24,6 +24,18 @@ def multiply(value1, value2):
 def divide(value1, value2):
     return (value1/value2)
 
+def _or(value1, value2):
+    return (value1 | value2)
+
+def _xor(value1, value2):
+    return (value1 ^ value2)
+
+def _and(value1, value2):
+    return (value1 & value2)
+
+def _not(value1):
+    return (~value1)
+
 def savevar(name, value):
     import symtab
     return symtab.addvar(name, value)

@@ -11,10 +11,10 @@ def isAlNum(s):
     return s.isalnum()
 
 def isAddop(s):
-    return (s in ['+', '-']) 
+    return (s in ['+', '-', '|', '~']) 
 
 def isMulop(s):
-    return (s in ['*', '/']) 
+    return (s in ['*', '/', '&']) 
 
 def match(x):
     import input, errors

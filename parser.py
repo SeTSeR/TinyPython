@@ -9,14 +9,17 @@ def assignment():
     semantic.savevar(varname, varvalue)
 
 def term():
-    result = factor()
+    result = notfactor()
     while(scanner.isMulop(input.Look)):
         if(input.Look=='*'):
             scanner.match('*')
-            result = semantic.multiply(result, factor())
+            result = semantic.multiply(result, notfactor())
         elif(input.Look=='/'):
             scanner.match('/')
-            result = semantic.divide(result, factor())
+            result = semantic.divide(result, notfactor())
+        elif(input.Look=='&'):
+            scanner.match('&')
+            result = semantic._and(result, notfactor())
     return result
 
 def signedterm():
@@ -37,6 +40,12 @@ def expression():
         elif(input.Look=='-'):
             scanner.match('-')
             result = semantic.substract(result, term())
+        elif(input.Look=='|'):
+            scanner.match('|')
+            result = semantic._or(result, term())
+        elif(input.Look=='~'):
+            scanner.match('~')
+            result = semantic._xor(result, term())
     return result
 
 def factor():
@@ -52,11 +61,12 @@ def factor():
     else:
         errors.error('Unrecognized character: '+input.Look)
 
-def signedfactor():
-    sign = input.Look;
-    if(scanner.isAddop(input.Look)):
-        input.Look = input.getchar()
-    result = factor()
-    if(sign=='-'):
-        result = semantic.negate(result)
+def notfactor():
+    result = 0
+    if(input.Look=='!'):
+        scanner.match('!')
+        result = factor()
+        result = semantic._not(result)
+    else:
+        result = factor()
     return result
