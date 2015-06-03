@@ -4,9 +4,13 @@
 import sys
 
 Look = ''
+program = ''
+counter = 0
 
 def getchar():
-    char = filep.read(1)
+    global counter
+    char = program[counter]
+    counter = counter + 1
     return char
 
 def end():
@@ -15,4 +19,5 @@ def end():
 #filename = sys.argv[1]
 #filep = open(filename)
 filep = sys.stdin
+program = filep.read()
 Look = getchar()

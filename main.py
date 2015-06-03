@@ -16,4 +16,6 @@ if(sys.argv[1][0]=='-'):
 else:
     import input;
     print(str(parser.expression()))
+    if not (input.Look=='\n'):
+        errors.expected('Newline')
     input.end()
