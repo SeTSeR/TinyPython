@@ -21,3 +21,5 @@ def end():
 filep = sys.stdin
 program = filep.read()
 Look = getchar()
+while(Look in [' ', '\t']):
+    Look = getchar()

@@ -16,12 +16,16 @@ def isAddop(s):
 def isMulop(s):
     return (s in ['*', '/', '&']) 
 
+def isWhite(s):
+    return (s in ' ','\t' )
+
 def match(x):
     import input, errors
     if not (input.Look == x):
         errors.expected(x)
     else:
         input.Look = input.getchar()
+        skipwhite()
 
 def getname():
     import input, errors
@@ -32,6 +36,7 @@ def getname():
         while(isAlNum(input.Look)):
             str = str + input.Look
             input.Look = input.getchar()
+            skipwhite()
     return str
 
 def getnum():
@@ -43,4 +48,11 @@ def getnum():
         while input.Look.isdigit():
             num = num*10 + int(input.Look)
             input.Look = input.getchar()
+            skipwhite()
     return num
+
+def skipwhite():
+    import input
+    while(isWhite(input.Look)):
+        input.Look = input.getchar()
+
