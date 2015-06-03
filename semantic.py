@@ -22,6 +22,9 @@ def multiply(value1, value2):
     return (value1*value2)
 
 def divide(value1, value2):
+    if(value2==0):
+        import errors
+        errors.error('Division by zero')
     return (value1/value2)
 
 def _or(value1, value2):
