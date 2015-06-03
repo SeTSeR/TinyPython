@@ -15,6 +15,7 @@ if(sys.argv[1][0]=='-'):
         errors.error('Unrecognized parameter')
 else:
     import input;
+    """
     while not (input.Look=='.'):
         if(input.Look=='?'):
             scanner.match('?')
@@ -27,4 +28,9 @@ else:
         else:
             parser.assignment()
         scanner.newline()
+    """
+    token = ''
+    while not (token=='.'):
+        token = scanner.scan()
+        print(token)
     input.end()
