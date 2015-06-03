@@ -56,3 +56,7 @@ def skipwhite():
     while(isWhite(input.Look)):
         input.Look = input.getchar()
 
+def newline():
+    import input
+    if(input.Look=='\n'):
+        input.Look = input.getchar()

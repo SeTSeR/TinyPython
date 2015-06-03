@@ -9,7 +9,10 @@ counter = 0
 
 def getchar():
     global counter
-    char = program[counter]
+    try:
+        char = program[counter]
+    except IndexError:
+        char = '.'
     counter = counter + 1
     return char
 

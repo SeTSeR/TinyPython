@@ -15,7 +15,16 @@ if(sys.argv[1][0]=='-'):
         errors.error('Unrecognized parameter')
 else:
     import input;
-    print(str(parser.expression()))
-    if not (input.Look=='\n'):
-        errors.expected('Newline')
+    while not (input.Look=='.'):
+        if(input.Look=='?'):
+            scanner.match('?')
+            import semantic
+            semantic._input()
+        elif(input.Look=='!'):
+            scanner.match('!')
+            import semantic
+            semantic._output()
+        else:
+            parser.assignment()
+        scanner.newline()
     input.end()

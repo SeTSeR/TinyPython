@@ -42,3 +42,11 @@ def _not(value1):
 def savevar(name, value):
     import symtab
     return symtab.addvar(name, value)
+
+def _input():
+    import scanner
+    savevar(scanner.getname(), int(input()))
+
+def _output():
+    import scanner
+    print(str(loadvar(scanner.getname())))
