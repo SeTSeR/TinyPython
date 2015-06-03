@@ -17,7 +17,7 @@ def isMulop(s):
     return (s in ['*', '/', '&']) 
 
 def isWhite(s):
-    return (s in ' ','\t' )
+    return (s in [' ', '\t'])
 
 def match(x):
     import input, errors
