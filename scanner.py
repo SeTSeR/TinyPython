@@ -1,6 +1,3 @@
-#!/bin/bash
-# -*- coding: UTF-8 -*-
-
 import input, errors
 
 def isAlpha(s):
