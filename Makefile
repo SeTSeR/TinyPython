@@ -1,7 +1,7 @@
 TARGET = interpreter
 PREFIX = /usr/local/bin
 MAKE = make
-OBJECTS = scanner/base.o scanner/number.o scanner/token.o
+OBJECTS = scanner/base.o scanner/number.o scanner/identifier.o scanner/token.o scanner/operator.o
 
 
 .PHONY:		all clean install uninstall make-scanner
@@ -30,4 +30,4 @@ errors.o:
 	$(CXX) -c errors.cxx -o errors.o
 
 make-scanner:
-	$(MAKE) -C scanner base.o number.o token.o
+	$(MAKE) -C scanner base.o number.o identifier.o token.o operator.o

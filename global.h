@@ -7,6 +7,7 @@ extern char Look;
 
 void init(int mode, std::string filename);
 char mygetchar();
+void scanoperator();
 void error(std::string error);
 void expected(std::string expected);
 #endif

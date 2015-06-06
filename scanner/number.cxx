@@ -1,13 +1,14 @@
 #include "scannerglobal.h"
 
-scanner::Number* scanner::Number::scan()
+Number* Number::scan()
 {
-	std::string* result = new std::string(" ");
+	int result = 0;
 	if(!isDigit(Look)) expected("Number");
 	while(isDigit(Look))
 	{
-		*result += Look;
+		result = result*10 + Look;
+		Look = mygetchar();
 	}
-	Number* resultobject = new Number('n', *result);
+	Number* resultobject = new Number(result);
 	return resultobject;
 }

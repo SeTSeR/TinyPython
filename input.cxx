@@ -27,7 +27,7 @@ void init(int mode, std::string filename)
 	if(mode==0)
 	{
 		*pcin >> program;
-		Look = getchar();
+		Look = mygetchar();
 	}
 	else if(mode==1)
 	{
