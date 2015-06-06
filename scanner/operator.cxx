@@ -9,6 +9,6 @@ Operator* Operator::scan()
 		*result += Look;
 		Look = mygetchar();
 	}
-	Operator* resultobject = new Operator((*result)[1], *result);
+	Operator* resultobject = new Operator((*result)[0], *result);
 	return resultobject;
 }

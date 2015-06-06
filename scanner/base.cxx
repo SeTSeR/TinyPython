@@ -3,12 +3,12 @@
 
 int isDigit(char c)
 {
-	return ((c>'0')&&(c<'9'));
+	return ((c>='0')&&(c<='9'));
 }
 
 int isAlpha(char c)
 {
-	return ((c>'a')&&(c<'z'));
+	return ((c>='a')&&(c<='z'));
 }
 
 int isAlNum(char c)
@@ -41,8 +41,32 @@ std::string tostring(int val)
 	return ss.str();
 }
 
-void scanoperator()
+void printtoken(Token* token)
 {
-	Operator* numb = new Operator('>', ">");
-	numb->scan();
+	std::cout << token->token << " " << token->value << std::endl;
+}
+
+void scan()
+{
+	Token* currenttoken = new Token('0', "0");
+	while(Look!='.')
+	{
+		if(isDigit(Look))
+		{
+			currenttoken = new Number(0);
+			currenttoken = currenttoken->scan();
+		}
+		else if(isAlpha(Look))
+		{
+			currenttoken = new Identifier("x");
+			currenttoken = currenttoken->scan();
+		}
+		else if(isOp(Look))
+		{
+			currenttoken = new Operator('<', "<");
+			currenttoken = currenttoken->scan();
+		}
+		else error("Unrecognized token");
+		printtoken(currenttoken);
+	}
 }

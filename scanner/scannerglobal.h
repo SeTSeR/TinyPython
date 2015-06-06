@@ -15,7 +15,10 @@ class Token
 	                Token(char, std::string);
 			char token;
 			std::string value;
-			Token* scan();
+			virtual	Token* scan()
+			{
+				return NULL;
+			}
 };
 
 class Number : public Token

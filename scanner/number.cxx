@@ -6,7 +6,7 @@ Number* Number::scan()
 	if(!isDigit(Look)) expected("Number");
 	while(isDigit(Look))
 	{
-		result = result*10 + Look;
+		result = (10*result) + (Look-'0');
 		Look = mygetchar();
 	}
 	Number* resultobject = new Number(result);
