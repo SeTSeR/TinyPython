@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <exception>
 
 #include "global.h"
 
@@ -16,7 +17,7 @@ char mygetchar()
 	{
 		result = program[programcounter++];
 	}
-	catch(...)
+	catch(std::exception& e)
 	{
 	}
 	return result;
