@@ -1,5 +1,7 @@
 #ifndef globalh
 #define globalh
+#include <iostream>
+
 extern int programcounter;
 extern char Look;
 

@@ -1,16 +1,18 @@
 TARGET = interpreter
 PREFIX = /usr/local/bin
+MAKE = make
+OBJECTS = scanner/base.o scanner/number.o scanner/token.o
 
 
-.PHONY:		all clean install uninstall
+.PHONY:		all clean install uninstall make-scanner
 
-$(TARGET):	main.o input.o errors.o
-	$(CXX) input.o main.o errors.o -o $(TARGET)
+$(TARGET):	main.o input.o errors.o make-scanner
+	$(CXX) input.o main.o errors.o $(OBJECTS) -o $(TARGET)
 
 all:	$(TARGET)
 
 clean:
-	rm -rf *.o
+	rm -rf *.o $(TARGET) && $(MAKE) -C scanner clean
 
 install:	$(TARGET)
 	install $(TARGET) $(PREFIX)
@@ -26,3 +28,6 @@ main.o:
 
 errors.o:
 	$(CXX) -c errors.cxx -o errors.o
+
+make-scanner:
+	$(MAKE) -C scanner base.o number.o token.o
