@@ -6,3 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/home/setser/Tiny/src/errors.cxx
+iostream
+-
+exception
+-
+string
+-
+global.h
+/home/setser/Tiny/src/global.h
+
+/home/setser/Tiny/src/global.h
+iostream
+-
+
+/home/setser/Tiny/src/input.cxx
+fstream
+-
+exception
+-
+global.h
+/home/setser/Tiny/src/global.h
+
+/home/setser/Tiny/src/main.cxx
+global.h
+/home/setser/Tiny/src/global.h
+

@@ -120,7 +120,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=interpreter
+CMAKE_PROJECT_NAME:STATIC=hello_world
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -179,6 +179,12 @@ EXECUTABLE_OUTPUT_PATH:PATH=
 
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=
+
+//Value Computed by CMake
+hello_world_BINARY_DIR:STATIC=/home/setser/Tiny/build
+
+//Value Computed by CMake
+hello_world_SOURCE_DIR:STATIC=/home/setser/Tiny/src
 
 //Value Computed by CMake
 interpreter_BINARY_DIR:STATIC=/home/setser/Tiny/build

@@ -4,9 +4,9 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/setser/Tiny/src/errors.cxx" "/home/setser/Tiny/build/CMakeFiles/interpreter.dir/errors.cxx.o"
-  "/home/setser/Tiny/src/input.cxx" "/home/setser/Tiny/build/CMakeFiles/interpreter.dir/input.cxx.o"
-  "/home/setser/Tiny/src/main.cxx" "/home/setser/Tiny/build/CMakeFiles/interpreter.dir/main.cxx.o"
+  "/home/setser/Tiny/src/errors.cxx" "/home/setser/Tiny/build/CMakeFiles/interpreter.dir/errors.o"
+  "/home/setser/Tiny/src/input.cxx" "/home/setser/Tiny/build/CMakeFiles/interpreter.dir/input.o"
+  "/home/setser/Tiny/src/main.cxx" "/home/setser/Tiny/build/CMakeFiles/interpreter.dir/main.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

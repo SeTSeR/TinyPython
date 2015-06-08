@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/interpreter.dir/main.cxx.o"
-  "CMakeFiles/interpreter.dir/input.cxx.o"
-  "CMakeFiles/interpreter.dir/errors.cxx.o"
+  "CMakeFiles/interpreter.dir/main.o"
+  "CMakeFiles/interpreter.dir/input.o"
+  "CMakeFiles/interpreter.dir/errors.o"
   "interpreter.pdb"
   "interpreter"
 )

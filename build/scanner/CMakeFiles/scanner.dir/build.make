@@ -98,32 +98,9 @@ scanner/CMakeFiles/scanner.dir/token.cxx.o.provides: scanner/CMakeFiles/scanner.
 
 scanner/CMakeFiles/scanner.dir/token.cxx.o.provides.build: scanner/CMakeFiles/scanner.dir/token.cxx.o
 
-scanner/CMakeFiles/scanner.dir/identifier.cxx.o: scanner/CMakeFiles/scanner.dir/flags.make
-scanner/CMakeFiles/scanner.dir/identifier.cxx.o: /home/setser/Tiny/src/scanner/identifier.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object scanner/CMakeFiles/scanner.dir/identifier.cxx.o"
-	cd /home/setser/Tiny/build/scanner && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/scanner.dir/identifier.cxx.o -c /home/setser/Tiny/src/scanner/identifier.cxx
-
-scanner/CMakeFiles/scanner.dir/identifier.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scanner.dir/identifier.cxx.i"
-	cd /home/setser/Tiny/build/scanner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/setser/Tiny/src/scanner/identifier.cxx > CMakeFiles/scanner.dir/identifier.cxx.i
-
-scanner/CMakeFiles/scanner.dir/identifier.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/identifier.cxx.s"
-	cd /home/setser/Tiny/build/scanner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/setser/Tiny/src/scanner/identifier.cxx -o CMakeFiles/scanner.dir/identifier.cxx.s
-
-scanner/CMakeFiles/scanner.dir/identifier.cxx.o.requires:
-.PHONY : scanner/CMakeFiles/scanner.dir/identifier.cxx.o.requires
-
-scanner/CMakeFiles/scanner.dir/identifier.cxx.o.provides: scanner/CMakeFiles/scanner.dir/identifier.cxx.o.requires
-	$(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/identifier.cxx.o.provides.build
-.PHONY : scanner/CMakeFiles/scanner.dir/identifier.cxx.o.provides
-
-scanner/CMakeFiles/scanner.dir/identifier.cxx.o.provides.build: scanner/CMakeFiles/scanner.dir/identifier.cxx.o
-
 scanner/CMakeFiles/scanner.dir/number.cxx.o: scanner/CMakeFiles/scanner.dir/flags.make
 scanner/CMakeFiles/scanner.dir/number.cxx.o: /home/setser/Tiny/src/scanner/number.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object scanner/CMakeFiles/scanner.dir/number.cxx.o"
 	cd /home/setser/Tiny/build/scanner && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/scanner.dir/number.cxx.o -c /home/setser/Tiny/src/scanner/number.cxx
 
@@ -143,6 +120,29 @@ scanner/CMakeFiles/scanner.dir/number.cxx.o.provides: scanner/CMakeFiles/scanner
 .PHONY : scanner/CMakeFiles/scanner.dir/number.cxx.o.provides
 
 scanner/CMakeFiles/scanner.dir/number.cxx.o.provides.build: scanner/CMakeFiles/scanner.dir/number.cxx.o
+
+scanner/CMakeFiles/scanner.dir/identifier.cxx.o: scanner/CMakeFiles/scanner.dir/flags.make
+scanner/CMakeFiles/scanner.dir/identifier.cxx.o: /home/setser/Tiny/src/scanner/identifier.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object scanner/CMakeFiles/scanner.dir/identifier.cxx.o"
+	cd /home/setser/Tiny/build/scanner && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/scanner.dir/identifier.cxx.o -c /home/setser/Tiny/src/scanner/identifier.cxx
+
+scanner/CMakeFiles/scanner.dir/identifier.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scanner.dir/identifier.cxx.i"
+	cd /home/setser/Tiny/build/scanner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/setser/Tiny/src/scanner/identifier.cxx > CMakeFiles/scanner.dir/identifier.cxx.i
+
+scanner/CMakeFiles/scanner.dir/identifier.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scanner.dir/identifier.cxx.s"
+	cd /home/setser/Tiny/build/scanner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/setser/Tiny/src/scanner/identifier.cxx -o CMakeFiles/scanner.dir/identifier.cxx.s
+
+scanner/CMakeFiles/scanner.dir/identifier.cxx.o.requires:
+.PHONY : scanner/CMakeFiles/scanner.dir/identifier.cxx.o.requires
+
+scanner/CMakeFiles/scanner.dir/identifier.cxx.o.provides: scanner/CMakeFiles/scanner.dir/identifier.cxx.o.requires
+	$(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/identifier.cxx.o.provides.build
+.PHONY : scanner/CMakeFiles/scanner.dir/identifier.cxx.o.provides
+
+scanner/CMakeFiles/scanner.dir/identifier.cxx.o.provides.build: scanner/CMakeFiles/scanner.dir/identifier.cxx.o
 
 scanner/CMakeFiles/scanner.dir/operator.cxx.o: scanner/CMakeFiles/scanner.dir/flags.make
 scanner/CMakeFiles/scanner.dir/operator.cxx.o: /home/setser/Tiny/src/scanner/operator.cxx
@@ -171,8 +171,8 @@ scanner/CMakeFiles/scanner.dir/operator.cxx.o.provides.build: scanner/CMakeFiles
 scanner_OBJECTS = \
 "CMakeFiles/scanner.dir/base.cxx.o" \
 "CMakeFiles/scanner.dir/token.cxx.o" \
-"CMakeFiles/scanner.dir/identifier.cxx.o" \
 "CMakeFiles/scanner.dir/number.cxx.o" \
+"CMakeFiles/scanner.dir/identifier.cxx.o" \
 "CMakeFiles/scanner.dir/operator.cxx.o"
 
 # External object files for target scanner
@@ -180,8 +180,8 @@ scanner_EXTERNAL_OBJECTS =
 
 scanner/libscanner.so: scanner/CMakeFiles/scanner.dir/base.cxx.o
 scanner/libscanner.so: scanner/CMakeFiles/scanner.dir/token.cxx.o
-scanner/libscanner.so: scanner/CMakeFiles/scanner.dir/identifier.cxx.o
 scanner/libscanner.so: scanner/CMakeFiles/scanner.dir/number.cxx.o
+scanner/libscanner.so: scanner/CMakeFiles/scanner.dir/identifier.cxx.o
 scanner/libscanner.so: scanner/CMakeFiles/scanner.dir/operator.cxx.o
 scanner/libscanner.so: scanner/CMakeFiles/scanner.dir/build.make
 scanner/libscanner.so: scanner/CMakeFiles/scanner.dir/link.txt
@@ -194,8 +194,8 @@ scanner/CMakeFiles/scanner.dir/build: scanner/libscanner.so
 
 scanner/CMakeFiles/scanner.dir/requires: scanner/CMakeFiles/scanner.dir/base.cxx.o.requires
 scanner/CMakeFiles/scanner.dir/requires: scanner/CMakeFiles/scanner.dir/token.cxx.o.requires
-scanner/CMakeFiles/scanner.dir/requires: scanner/CMakeFiles/scanner.dir/identifier.cxx.o.requires
 scanner/CMakeFiles/scanner.dir/requires: scanner/CMakeFiles/scanner.dir/number.cxx.o.requires
+scanner/CMakeFiles/scanner.dir/requires: scanner/CMakeFiles/scanner.dir/identifier.cxx.o.requires
 scanner/CMakeFiles/scanner.dir/requires: scanner/CMakeFiles/scanner.dir/operator.cxx.o.requires
 .PHONY : scanner/CMakeFiles/scanner.dir/requires
 

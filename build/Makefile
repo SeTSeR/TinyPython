@@ -127,77 +127,50 @@ scanner/fast:
 	$(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/build
 .PHONY : scanner/fast
 
-errors.o: errors.cxx.o
+# target to build an object file
+errors.o:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/errors.o
 .PHONY : errors.o
 
-# target to build an object file
-errors.cxx.o:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/errors.cxx.o
-.PHONY : errors.cxx.o
-
-errors.i: errors.cxx.i
+# target to preprocess a source file
+errors.i:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/errors.i
 .PHONY : errors.i
 
-# target to preprocess a source file
-errors.cxx.i:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/errors.cxx.i
-.PHONY : errors.cxx.i
-
-errors.s: errors.cxx.s
+# target to generate assembly for a file
+errors.s:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/errors.s
 .PHONY : errors.s
 
-# target to generate assembly for a file
-errors.cxx.s:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/errors.cxx.s
-.PHONY : errors.cxx.s
-
-input.o: input.cxx.o
+# target to build an object file
+input.o:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/input.o
 .PHONY : input.o
 
-# target to build an object file
-input.cxx.o:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/input.cxx.o
-.PHONY : input.cxx.o
-
-input.i: input.cxx.i
+# target to preprocess a source file
+input.i:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/input.i
 .PHONY : input.i
 
-# target to preprocess a source file
-input.cxx.i:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/input.cxx.i
-.PHONY : input.cxx.i
-
-input.s: input.cxx.s
+# target to generate assembly for a file
+input.s:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/input.s
 .PHONY : input.s
 
-# target to generate assembly for a file
-input.cxx.s:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/input.cxx.s
-.PHONY : input.cxx.s
-
-main.o: main.cxx.o
+# target to build an object file
+main.o:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/main.o
 .PHONY : main.o
 
-# target to build an object file
-main.cxx.o:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/main.cxx.o
-.PHONY : main.cxx.o
-
-main.i: main.cxx.i
+# target to preprocess a source file
+main.i:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/main.i
 .PHONY : main.i
 
-# target to preprocess a source file
-main.cxx.i:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/main.cxx.i
-.PHONY : main.cxx.i
-
-main.s: main.cxx.s
-.PHONY : main.s
-
 # target to generate assembly for a file
-main.cxx.s:
-	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/main.cxx.s
-.PHONY : main.cxx.s
+main.s:
+	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/main.s
+.PHONY : main.s
 
 # Help Target
 help:

@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/scanner.dir/base.cxx.o"
   "CMakeFiles/scanner.dir/token.cxx.o"
-  "CMakeFiles/scanner.dir/identifier.cxx.o"
   "CMakeFiles/scanner.dir/number.cxx.o"
+  "CMakeFiles/scanner.dir/identifier.cxx.o"
   "CMakeFiles/scanner.dir/operator.cxx.o"
   "libscanner.pdb"
   "libscanner.so"

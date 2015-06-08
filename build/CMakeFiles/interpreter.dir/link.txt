@@ -1,1 +1,1 @@
-/usr/bin/c++       CMakeFiles/interpreter.dir/main.cxx.o CMakeFiles/interpreter.dir/input.cxx.o CMakeFiles/interpreter.dir/errors.cxx.o  -o interpreter -rdynamic scanner/libscanner.so -Wl,-rpath,/home/setser/Tiny/build/scanner 
+/usr/bin/c++       CMakeFiles/interpreter.dir/main.o CMakeFiles/interpreter.dir/input.o CMakeFiles/interpreter.dir/errors.o  -o interpreter -rdynamic scanner/libscanner.so -Wl,-rpath,/home/setser/Tiny/build/scanner 
