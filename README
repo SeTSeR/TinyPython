@@ -1,1 +1,5 @@
+For build:
+	1) To configure cmake run ./configure
+	2) To build project run make
+
 Program has one param: name of the file to interpret and one key: --help(or -h)
