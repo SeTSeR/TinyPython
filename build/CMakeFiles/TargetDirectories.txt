@@ -1,0 +1,2 @@
+/home/setser/Tiny/build/CMakeFiles/interpreter.dir
+/home/setser/Tiny/build/scanner/CMakeFiles/scanner.dir
