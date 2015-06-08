@@ -5,6 +5,8 @@
 
 int programcounter = 0;
 char Look = ' ';
+char Token1 = ' ';
+std::string Value = "";
 std::string program = "";
 std::ifstream filep;
 std::istream* pcin = &std::cin;
@@ -28,12 +30,14 @@ void init(int mode, std::string filename)
 	{
 		*pcin >> program;
 		Look = mygetchar();
+		scan();
 	}
 	else if(mode==1)
 	{
 		filep.open(filename.c_str());
 		pcin = &filep;
 		*pcin >> program;
-		Look = getchar();
+		Look = mygetchar();
+		scan();
 	}
 }

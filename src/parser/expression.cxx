@@ -2,24 +2,22 @@
 
 int Expression::parse()
 {
+	int result = 0;
 	Term* term = new Term();
-	int result = term->parse();
-	Token* currenttoken = scan();
-	while((currenttoken->token=='+')&&(currenttoken->token=='-'))
+	result = term->parse();
+	while((Token1=='+')||(Token1=='-'))
 	{
-		switch(currenttoken->token)
+		switch(Token1)
 		{
 			case '+':
-				currenttoken = scan();
+				scan();
 				result+=term->parse();
 				break;
 			case '-':
-				currenttoken = scan();
+				scan();
 				result-=term->parse();
-			default:
-				error("Unrecognized token");
+				break;
 		}
-		currenttoken = scan();
 	}
 	return result;
 }

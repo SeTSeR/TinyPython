@@ -35,10 +35,13 @@ class Expression: public NonTerminal
 
 extern int programcounter;
 extern char Look;
+extern char Token1;
+extern std::string Value;
 
 void init(int mode, std::string filename);
 char mygetchar();
 Token* scan();
+void printtoken(Token* token);
 void error(std::string error);
 void expected(std::string expected);
 int readvar(std::string name);

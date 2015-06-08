@@ -2,30 +2,28 @@
 
 int Factor::parse()
 {
-	Token* currenttoken = scan();
 	int result = 0;
-	int negateresult = 0;
-	if(currenttoken->token=='-')
+	int negate = 0;
+	if(Token1=='-')
 	{
-		negateresult = 1;
-		currenttoken = scan();
+		negate = 1;
+		scan();
 	}
-	switch(currenttoken->token)
+	switch(Token1)
 	{
-		case 'n':
-			result = toint(currenttoken->value);
-			break;
 		case 'x':
-			result = readvar(currenttoken->value);
+			result = readvar(Value);
+			break;
+		case 'n':
+			result = toint(Value);
 			break;
 		case '(':
-			currenttoken = scan();
-			Expression* inScopes = new Expression();
-		 	result = inScopes->parse();
-			currenttoken = scan();
-			if(currenttoken->token!=')') error("Scopes hasn't been closed");
+			scan();
+			Expression* expr = new Expression();
+			result = expr->parse();
+			if(Token1!=')') error("Scope hadn't been closed.");
 			break;
 	}
-	if(negateresult) result*=(-1);
+	scan();
 	return result;
 }

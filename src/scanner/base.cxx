@@ -51,7 +51,7 @@ Token* scan()
 	Token* currenttoken = new Token('0', "0");
 	if(isDigit(Look))
 	{
-		currenttoken = new Number(0);
+		currenttoken = new Number("0");
 		currenttoken = currenttoken->scan();
 	}
 	else if(isAlpha(Look))
@@ -64,6 +64,17 @@ Token* scan()
 		currenttoken = new Operator('<', "<");
 		currenttoken = currenttoken->scan();
 	}
-	else error("Unrecognized token");
+	else if(Look=='(')
+	{
+		currenttoken = new Token('(', "(");
+		Look = mygetchar();
+	}
+	else if(Look==')')
+	{
+		currenttoken = new Token(')', ")");
+		Look = mygetchar();
+	}
+	Token1 = currenttoken->token;
+	Value = currenttoken->value;
 	return currenttoken;
 }

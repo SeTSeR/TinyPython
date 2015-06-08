@@ -10,7 +10,11 @@
 iostream
 -
 
-/home/setser/Tiny/src/main.cxx
+/home/setser/Tiny/src/input.cxx
+fstream
+-
+exception
+-
 global.h
 /home/setser/Tiny/src/global.h
 

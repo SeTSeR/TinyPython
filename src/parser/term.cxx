@@ -2,25 +2,22 @@
 
 int Term::parse()
 {
+	int result = 0;
 	Factor* fact = new Factor();
-	int result = fact->parse();
-	Token* currenttoken = scan();
-	while((currenttoken->token=='*')&&(currenttoken->token)=='/')
+	result = fact->parse();
+	while((Token1=='*')||(Token1=='/'))
 	{
-		switch(currenttoken->token)
+		switch(Token1)
 		{
 			case '*':
-				currenttoken = scan();
+				scan();
 				result*=fact->parse();
 				break;
 			case '/':
-				currenttoken = scan();
-				result/=fact->parse();
+				scan();
+				result*=fact->parse();
 				break;
-			default:
-				error("Unrecognized token");
 		}
-		currenttoken = scan();
 	}
 	return result;
 }
