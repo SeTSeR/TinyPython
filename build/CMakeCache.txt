@@ -120,7 +120,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=hello_world
+CMAKE_PROJECT_NAME:STATIC=interpreter
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -192,6 +192,15 @@ interpreter_BINARY_DIR:STATIC=/home/setser/Tiny/build
 //Value Computed by CMake
 interpreter_SOURCE_DIR:STATIC=/home/setser/Tiny/src
 
+//Value Computed by CMake
+parser_BINARY_DIR:STATIC=/home/setser/Tiny/build/parser
+
+//Dependencies for target
+parser_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+parser_SOURCE_DIR:STATIC=/home/setser/Tiny/src/parser
+
 //Dependencies for target
 scanner.so_LIB_DEPENDS:STATIC=
 
@@ -203,6 +212,15 @@ scanner_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 scanner_SOURCE_DIR:STATIC=/home/setser/Tiny/src/scanner
+
+//Value Computed by CMake
+semantic_BINARY_DIR:STATIC=/home/setser/Tiny/build/semantic
+
+//Dependencies for target
+semantic_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+semantic_SOURCE_DIR:STATIC=/home/setser/Tiny/src/semantic
 
 
 ########################
@@ -297,7 +315,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=2
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

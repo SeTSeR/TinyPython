@@ -11,7 +11,9 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
   "/home/setser/Tiny/src/CMakeLists.txt"
+  "/home/setser/Tiny/src/parser/CMakeLists.txt"
   "/home/setser/Tiny/src/scanner/CMakeLists.txt"
+  "/home/setser/Tiny/src/semantic/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -37,10 +39,14 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "scanner/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "parser/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "semantic/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/interpreter.dir/DependInfo.cmake"
   "scanner/CMakeFiles/scanner.dir/DependInfo.cmake"
+  "parser/CMakeFiles/parser.dir/DependInfo.cmake"
+  "semantic/CMakeFiles/semantic.dir/DependInfo.cmake"
   )

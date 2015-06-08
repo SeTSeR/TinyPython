@@ -59,7 +59,9 @@ CMAKE_BINARY_DIR = /home/setser/Tiny/build
 # Target rules for target CMakeFiles/interpreter.dir
 
 # All Build rule for target.
+CMakeFiles/interpreter.dir/all: parser/CMakeFiles/parser.dir/all
 CMakeFiles/interpreter.dir/all: scanner/CMakeFiles/scanner.dir/all
+CMakeFiles/interpreter.dir/all: semantic/CMakeFiles/semantic.dir/all
 	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/depend
 	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  1 2 3
@@ -72,7 +74,7 @@ all: CMakeFiles/interpreter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/interpreter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/interpreter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 0
 .PHONY : CMakeFiles/interpreter.dir/rule
@@ -112,7 +114,7 @@ scanner/preinstall:
 scanner/CMakeFiles/scanner.dir/all:
 	$(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/depend
 	$(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  4 5 6 7 8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  9 10 11 12 13
 	@echo "Built target scanner"
 .PHONY : scanner/CMakeFiles/scanner.dir/all
 
@@ -138,6 +140,106 @@ scanner/CMakeFiles/scanner.dir/clean:
 
 # clean rule for target.
 clean: scanner/CMakeFiles/scanner.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory parser
+
+# Convenience name for "all" pass in the directory.
+parser/all: parser/CMakeFiles/parser.dir/all
+.PHONY : parser/all
+
+# Convenience name for "clean" pass in the directory.
+parser/clean: parser/CMakeFiles/parser.dir/clean
+.PHONY : parser/clean
+
+# Convenience name for "preinstall" pass in the directory.
+parser/preinstall:
+.PHONY : parser/preinstall
+
+#=============================================================================
+# Target rules for target parser/CMakeFiles/parser.dir
+
+# All Build rule for target.
+parser/CMakeFiles/parser.dir/all:
+	$(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/depend
+	$(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  4 5 6 7 8
+	@echo "Built target parser"
+.PHONY : parser/CMakeFiles/parser.dir/all
+
+# Include target in all.
+all: parser/CMakeFiles/parser.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+parser/CMakeFiles/parser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 parser/CMakeFiles/parser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 0
+.PHONY : parser/CMakeFiles/parser.dir/rule
+
+# Convenience name for target.
+parser: parser/CMakeFiles/parser.dir/rule
+.PHONY : parser
+
+# clean rule for target.
+parser/CMakeFiles/parser.dir/clean:
+	$(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/clean
+.PHONY : parser/CMakeFiles/parser.dir/clean
+
+# clean rule for target.
+clean: parser/CMakeFiles/parser.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory semantic
+
+# Convenience name for "all" pass in the directory.
+semantic/all: semantic/CMakeFiles/semantic.dir/all
+.PHONY : semantic/all
+
+# Convenience name for "clean" pass in the directory.
+semantic/clean: semantic/CMakeFiles/semantic.dir/clean
+.PHONY : semantic/clean
+
+# Convenience name for "preinstall" pass in the directory.
+semantic/preinstall:
+.PHONY : semantic/preinstall
+
+#=============================================================================
+# Target rules for target semantic/CMakeFiles/semantic.dir
+
+# All Build rule for target.
+semantic/CMakeFiles/semantic.dir/all:
+	$(MAKE) -f semantic/CMakeFiles/semantic.dir/build.make semantic/CMakeFiles/semantic.dir/depend
+	$(MAKE) -f semantic/CMakeFiles/semantic.dir/build.make semantic/CMakeFiles/semantic.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  14
+	@echo "Built target semantic"
+.PHONY : semantic/CMakeFiles/semantic.dir/all
+
+# Include target in all.
+all: semantic/CMakeFiles/semantic.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+semantic/CMakeFiles/semantic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 semantic/CMakeFiles/semantic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 0
+.PHONY : semantic/CMakeFiles/semantic.dir/rule
+
+# Convenience name for target.
+semantic: semantic/CMakeFiles/semantic.dir/rule
+.PHONY : semantic
+
+# clean rule for target.
+semantic/CMakeFiles/semantic.dir/clean:
+	$(MAKE) -f semantic/CMakeFiles/semantic.dir/build.make semantic/CMakeFiles/semantic.dir/clean
+.PHONY : semantic/CMakeFiles/semantic.dir/clean
+
+# clean rule for target.
+clean: semantic/CMakeFiles/semantic.dir/clean
 .PHONY : clean
 
 #=============================================================================

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/setser/Tiny/src/global.h
+iostream
+-
+
+/home/setser/Tiny/src/parser/base.cxx
+parserglobal.h
+/home/setser/Tiny/src/parser/parserglobal.h
+cstdlib
+-
+
+/home/setser/Tiny/src/parser/expression.cxx
+parserglobal.h
+/home/setser/Tiny/src/parser/parserglobal.h
+
+/home/setser/Tiny/src/parser/factor.cxx
+parserglobal.h
+/home/setser/Tiny/src/parser/parserglobal.h
+
+/home/setser/Tiny/src/parser/nonterminal.cxx
+parserglobal.h
+/home/setser/Tiny/src/parser/parserglobal.h
+
+/home/setser/Tiny/src/parser/parserglobal.h
+../global.h
+/home/setser/Tiny/src/global.h
+
+/home/setser/Tiny/src/parser/term.cxx
+parserglobal.h
+/home/setser/Tiny/src/parser/parserglobal.h
+

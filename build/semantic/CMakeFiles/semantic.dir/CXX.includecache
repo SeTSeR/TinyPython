@@ -10,7 +10,13 @@
 iostream
 -
 
-/home/setser/Tiny/src/main.cxx
-global.h
+/home/setser/Tiny/src/semantic/semanticglobal.h
+../global.h
 /home/setser/Tiny/src/global.h
+map
+-
+
+/home/setser/Tiny/src/semantic/vartab.cxx
+semanticglobal.h
+/home/setser/Tiny/src/semantic/semanticglobal.h
 

@@ -135,6 +135,8 @@ interpreter: CMakeFiles/interpreter.dir/input.o
 interpreter: CMakeFiles/interpreter.dir/errors.o
 interpreter: CMakeFiles/interpreter.dir/build.make
 interpreter: scanner/libscanner.so
+interpreter: parser/libparser.so
+interpreter: semantic/libsemantic.so
 interpreter: CMakeFiles/interpreter.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable interpreter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/interpreter.dir/link.txt --verbose=$(VERBOSE)

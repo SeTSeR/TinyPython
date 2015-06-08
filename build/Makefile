@@ -127,6 +127,32 @@ scanner/fast:
 	$(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/build
 .PHONY : scanner/fast
 
+#=============================================================================
+# Target rules for targets named parser
+
+# Build rule for target.
+parser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 parser
+.PHONY : parser
+
+# fast build rule for target.
+parser/fast:
+	$(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/build
+.PHONY : parser/fast
+
+#=============================================================================
+# Target rules for targets named semantic
+
+# Build rule for target.
+semantic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 semantic
+.PHONY : semantic
+
+# fast build rule for target.
+semantic/fast:
+	$(MAKE) -f semantic/CMakeFiles/semantic.dir/build.make semantic/CMakeFiles/semantic.dir/build
+.PHONY : semantic/fast
+
 # target to build an object file
 errors.o:
 	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/errors.o
@@ -182,6 +208,8 @@ help:
 	@echo "... interpreter"
 	@echo "... rebuild_cache"
 	@echo "... scanner"
+	@echo "... parser"
+	@echo "... semantic"
 	@echo "... errors.o"
 	@echo "... errors.i"
 	@echo "... errors.s"
