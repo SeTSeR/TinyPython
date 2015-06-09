@@ -98,9 +98,32 @@ parser/CMakeFiles/parser.dir/nonterminal.cxx.o.provides: parser/CMakeFiles/parse
 
 parser/CMakeFiles/parser.dir/nonterminal.cxx.o.provides.build: parser/CMakeFiles/parser.dir/nonterminal.cxx.o
 
+parser/CMakeFiles/parser.dir/assignment.cxx.o: parser/CMakeFiles/parser.dir/flags.make
+parser/CMakeFiles/parser.dir/assignment.cxx.o: /home/setser/Tiny/src/parser/assignment.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object parser/CMakeFiles/parser.dir/assignment.cxx.o"
+	cd /home/setser/Tiny/build/parser && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/assignment.cxx.o -c /home/setser/Tiny/src/parser/assignment.cxx
+
+parser/CMakeFiles/parser.dir/assignment.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/parser.dir/assignment.cxx.i"
+	cd /home/setser/Tiny/build/parser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/setser/Tiny/src/parser/assignment.cxx > CMakeFiles/parser.dir/assignment.cxx.i
+
+parser/CMakeFiles/parser.dir/assignment.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/parser.dir/assignment.cxx.s"
+	cd /home/setser/Tiny/build/parser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/setser/Tiny/src/parser/assignment.cxx -o CMakeFiles/parser.dir/assignment.cxx.s
+
+parser/CMakeFiles/parser.dir/assignment.cxx.o.requires:
+.PHONY : parser/CMakeFiles/parser.dir/assignment.cxx.o.requires
+
+parser/CMakeFiles/parser.dir/assignment.cxx.o.provides: parser/CMakeFiles/parser.dir/assignment.cxx.o.requires
+	$(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/assignment.cxx.o.provides.build
+.PHONY : parser/CMakeFiles/parser.dir/assignment.cxx.o.provides
+
+parser/CMakeFiles/parser.dir/assignment.cxx.o.provides.build: parser/CMakeFiles/parser.dir/assignment.cxx.o
+
 parser/CMakeFiles/parser.dir/expression.cxx.o: parser/CMakeFiles/parser.dir/flags.make
 parser/CMakeFiles/parser.dir/expression.cxx.o: /home/setser/Tiny/src/parser/expression.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object parser/CMakeFiles/parser.dir/expression.cxx.o"
 	cd /home/setser/Tiny/build/parser && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/expression.cxx.o -c /home/setser/Tiny/src/parser/expression.cxx
 
@@ -123,7 +146,7 @@ parser/CMakeFiles/parser.dir/expression.cxx.o.provides.build: parser/CMakeFiles/
 
 parser/CMakeFiles/parser.dir/term.cxx.o: parser/CMakeFiles/parser.dir/flags.make
 parser/CMakeFiles/parser.dir/term.cxx.o: /home/setser/Tiny/src/parser/term.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object parser/CMakeFiles/parser.dir/term.cxx.o"
 	cd /home/setser/Tiny/build/parser && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/term.cxx.o -c /home/setser/Tiny/src/parser/term.cxx
 
@@ -146,7 +169,7 @@ parser/CMakeFiles/parser.dir/term.cxx.o.provides.build: parser/CMakeFiles/parser
 
 parser/CMakeFiles/parser.dir/factor.cxx.o: parser/CMakeFiles/parser.dir/flags.make
 parser/CMakeFiles/parser.dir/factor.cxx.o: /home/setser/Tiny/src/parser/factor.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object parser/CMakeFiles/parser.dir/factor.cxx.o"
 	cd /home/setser/Tiny/build/parser && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/factor.cxx.o -c /home/setser/Tiny/src/parser/factor.cxx
 
@@ -171,6 +194,7 @@ parser/CMakeFiles/parser.dir/factor.cxx.o.provides.build: parser/CMakeFiles/pars
 parser_OBJECTS = \
 "CMakeFiles/parser.dir/base.cxx.o" \
 "CMakeFiles/parser.dir/nonterminal.cxx.o" \
+"CMakeFiles/parser.dir/assignment.cxx.o" \
 "CMakeFiles/parser.dir/expression.cxx.o" \
 "CMakeFiles/parser.dir/term.cxx.o" \
 "CMakeFiles/parser.dir/factor.cxx.o"
@@ -180,6 +204,7 @@ parser_EXTERNAL_OBJECTS =
 
 parser/libparser.so: parser/CMakeFiles/parser.dir/base.cxx.o
 parser/libparser.so: parser/CMakeFiles/parser.dir/nonterminal.cxx.o
+parser/libparser.so: parser/CMakeFiles/parser.dir/assignment.cxx.o
 parser/libparser.so: parser/CMakeFiles/parser.dir/expression.cxx.o
 parser/libparser.so: parser/CMakeFiles/parser.dir/term.cxx.o
 parser/libparser.so: parser/CMakeFiles/parser.dir/factor.cxx.o
@@ -194,6 +219,7 @@ parser/CMakeFiles/parser.dir/build: parser/libparser.so
 
 parser/CMakeFiles/parser.dir/requires: parser/CMakeFiles/parser.dir/base.cxx.o.requires
 parser/CMakeFiles/parser.dir/requires: parser/CMakeFiles/parser.dir/nonterminal.cxx.o.requires
+parser/CMakeFiles/parser.dir/requires: parser/CMakeFiles/parser.dir/assignment.cxx.o.requires
 parser/CMakeFiles/parser.dir/requires: parser/CMakeFiles/parser.dir/expression.cxx.o.requires
 parser/CMakeFiles/parser.dir/requires: parser/CMakeFiles/parser.dir/term.cxx.o.requires
 parser/CMakeFiles/parser.dir/requires: parser/CMakeFiles/parser.dir/factor.cxx.o.requires

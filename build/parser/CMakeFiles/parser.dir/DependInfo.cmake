@@ -4,6 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/setser/Tiny/src/parser/assignment.cxx" "/home/setser/Tiny/build/parser/CMakeFiles/parser.dir/assignment.cxx.o"
   "/home/setser/Tiny/src/parser/base.cxx" "/home/setser/Tiny/build/parser/CMakeFiles/parser.dir/base.cxx.o"
   "/home/setser/Tiny/src/parser/expression.cxx" "/home/setser/Tiny/build/parser/CMakeFiles/parser.dir/expression.cxx.o"
   "/home/setser/Tiny/src/parser/factor.cxx" "/home/setser/Tiny/build/parser/CMakeFiles/parser.dir/factor.cxx.o"

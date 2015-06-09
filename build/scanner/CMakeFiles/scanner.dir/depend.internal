@@ -21,3 +21,7 @@ scanner/CMakeFiles/scanner.dir/token.cxx.o
  /home/setser/Tiny/src/global.h
  /home/setser/Tiny/src/scanner/scannerglobal.h
  /home/setser/Tiny/src/scanner/token.cxx
+scanner/CMakeFiles/scanner.dir/white.cxx.o
+ /home/setser/Tiny/src/global.h
+ /home/setser/Tiny/src/scanner/scannerglobal.h
+ /home/setser/Tiny/src/scanner/white.cxx

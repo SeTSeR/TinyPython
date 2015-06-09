@@ -59,8 +59,8 @@ CMAKE_BINARY_DIR = /home/setser/Tiny/build
 # Target rules for target CMakeFiles/interpreter.dir
 
 # All Build rule for target.
-CMakeFiles/interpreter.dir/all: parser/CMakeFiles/parser.dir/all
 CMakeFiles/interpreter.dir/all: scanner/CMakeFiles/scanner.dir/all
+CMakeFiles/interpreter.dir/all: parser/CMakeFiles/parser.dir/all
 CMakeFiles/interpreter.dir/all: semantic/CMakeFiles/semantic.dir/all
 	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/depend
 	$(MAKE) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/build
@@ -74,7 +74,7 @@ all: CMakeFiles/interpreter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/interpreter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/interpreter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 0
 .PHONY : CMakeFiles/interpreter.dir/rule
@@ -114,7 +114,7 @@ scanner/preinstall:
 scanner/CMakeFiles/scanner.dir/all:
 	$(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/depend
 	$(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  9 10 11 12 13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  10 11 12 13 14 15
 	@echo "Built target scanner"
 .PHONY : scanner/CMakeFiles/scanner.dir/all
 
@@ -124,7 +124,7 @@ all: scanner/CMakeFiles/scanner.dir/all
 
 # Build rule for subdir invocation for target.
 scanner/CMakeFiles/scanner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 scanner/CMakeFiles/scanner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 0
 .PHONY : scanner/CMakeFiles/scanner.dir/rule
@@ -164,7 +164,7 @@ parser/preinstall:
 parser/CMakeFiles/parser.dir/all:
 	$(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/depend
 	$(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  4 5 6 7 8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  4 5 6 7 8 9
 	@echo "Built target parser"
 .PHONY : parser/CMakeFiles/parser.dir/all
 
@@ -174,7 +174,7 @@ all: parser/CMakeFiles/parser.dir/all
 
 # Build rule for subdir invocation for target.
 parser/CMakeFiles/parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 parser/CMakeFiles/parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/setser/Tiny/build/CMakeFiles 0
 .PHONY : parser/CMakeFiles/parser.dir/rule
@@ -214,7 +214,7 @@ semantic/preinstall:
 semantic/CMakeFiles/semantic.dir/all:
 	$(MAKE) -f semantic/CMakeFiles/semantic.dir/build.make semantic/CMakeFiles/semantic.dir/depend
 	$(MAKE) -f semantic/CMakeFiles/semantic.dir/build.make semantic/CMakeFiles/semantic.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  14
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/setser/Tiny/build/CMakeFiles  16
 	@echo "Built target semantic"
 .PHONY : semantic/CMakeFiles/semantic.dir/all
 

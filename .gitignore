@@ -1,5 +1,2 @@
-build/CMakeCache.txt
-build/CMakeFiles/*
-build/cmake.install_cmake
-build/Makefile
-build/scanner/*
+build/
+build/*

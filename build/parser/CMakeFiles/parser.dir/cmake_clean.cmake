@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/parser.dir/base.cxx.o"
   "CMakeFiles/parser.dir/nonterminal.cxx.o"
+  "CMakeFiles/parser.dir/assignment.cxx.o"
   "CMakeFiles/parser.dir/expression.cxx.o"
   "CMakeFiles/parser.dir/term.cxx.o"
   "CMakeFiles/parser.dir/factor.cxx.o"

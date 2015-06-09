@@ -10,19 +10,11 @@
 iostream
 -
 
-/home/setser/Tiny/src/parser/expression.cxx
-parserglobal.h
-/home/setser/Tiny/src/parser/parserglobal.h
-
-/home/setser/Tiny/src/parser/factor.cxx
+/home/setser/Tiny/src/parser/assignment.cxx
 parserglobal.h
 /home/setser/Tiny/src/parser/parserglobal.h
 
 /home/setser/Tiny/src/parser/parserglobal.h
 ../global.h
 /home/setser/Tiny/src/global.h
-
-/home/setser/Tiny/src/parser/term.cxx
-parserglobal.h
-/home/setser/Tiny/src/parser/parserglobal.h
 

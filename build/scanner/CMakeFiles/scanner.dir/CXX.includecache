@@ -10,13 +10,11 @@
 iostream
 -
 
-/home/setser/Tiny/src/scanner/base.cxx
-scannerglobal.h
-/home/setser/Tiny/src/scanner/scannerglobal.h
-sstream
--
-
 /home/setser/Tiny/src/scanner/scannerglobal.h
 ../global.h
 /home/setser/Tiny/src/global.h
+
+/home/setser/Tiny/src/scanner/white.cxx
+scannerglobal.h
+/home/setser/Tiny/src/scanner/scannerglobal.h
 

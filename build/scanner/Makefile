@@ -235,6 +235,30 @@ token.cxx.s:
 	cd /home/setser/Tiny/build && $(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/token.cxx.s
 .PHONY : token.cxx.s
 
+white.o: white.cxx.o
+.PHONY : white.o
+
+# target to build an object file
+white.cxx.o:
+	cd /home/setser/Tiny/build && $(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/white.cxx.o
+.PHONY : white.cxx.o
+
+white.i: white.cxx.i
+.PHONY : white.i
+
+# target to preprocess a source file
+white.cxx.i:
+	cd /home/setser/Tiny/build && $(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/white.cxx.i
+.PHONY : white.cxx.i
+
+white.s: white.cxx.s
+.PHONY : white.s
+
+# target to generate assembly for a file
+white.cxx.s:
+	cd /home/setser/Tiny/build && $(MAKE) -f scanner/CMakeFiles/scanner.dir/build.make scanner/CMakeFiles/scanner.dir/white.cxx.s
+.PHONY : white.cxx.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,6 +283,9 @@ help:
 	@echo "... token.o"
 	@echo "... token.i"
 	@echo "... token.s"
+	@echo "... white.o"
+	@echo "... white.i"
+	@echo "... white.s"
 .PHONY : help
 
 

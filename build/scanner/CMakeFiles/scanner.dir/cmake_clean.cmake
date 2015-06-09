@@ -4,6 +4,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/scanner.dir/number.cxx.o"
   "CMakeFiles/scanner.dir/identifier.cxx.o"
   "CMakeFiles/scanner.dir/operator.cxx.o"
+  "CMakeFiles/scanner.dir/white.cxx.o"
   "libscanner.pdb"
   "libscanner.so"
 )

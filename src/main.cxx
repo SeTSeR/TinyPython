@@ -12,7 +12,7 @@ int main(int argc, char** argv)
 	if(argc==1)
 	{
 		init(0, "None");
-		Expression* expr = new Expression();
+		Assignment* expr = new Assignment();
 		std::cout << expr->parse() << std::endl;
 	}
 	else

@@ -9,6 +9,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/setser/Tiny/src/scanner/number.cxx" "/home/setser/Tiny/build/scanner/CMakeFiles/scanner.dir/number.cxx.o"
   "/home/setser/Tiny/src/scanner/operator.cxx" "/home/setser/Tiny/build/scanner/CMakeFiles/scanner.dir/operator.cxx.o"
   "/home/setser/Tiny/src/scanner/token.cxx" "/home/setser/Tiny/build/scanner/CMakeFiles/scanner.dir/token.cxx.o"
+  "/home/setser/Tiny/src/scanner/white.cxx" "/home/setser/Tiny/build/scanner/CMakeFiles/scanner.dir/white.cxx.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

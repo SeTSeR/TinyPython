@@ -22,6 +22,12 @@ int isOp(char c)
 	return inArray(c, ops);
 }
 
+int isWhite(char c)
+{
+	char whites[2] = {' ', '\t'};
+	return inArray(c, whites);
+}
+
 int inArray(char c, char* array)
 {
 	int i = 0;
@@ -49,6 +55,8 @@ void printtoken(Token* token)
 Token* scan()
 {
 	Token* currenttoken = new Token('0', "0");
+	Token* whitetoken = new White(' ', " ");
+	whitetoken->scan();
 	if(isDigit(Look))
 	{
 		currenttoken = new Number("0");

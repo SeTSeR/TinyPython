@@ -115,6 +115,30 @@ parser/fast:
 	cd /home/setser/Tiny/build && $(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/build
 .PHONY : parser/fast
 
+assignment.o: assignment.cxx.o
+.PHONY : assignment.o
+
+# target to build an object file
+assignment.cxx.o:
+	cd /home/setser/Tiny/build && $(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/assignment.cxx.o
+.PHONY : assignment.cxx.o
+
+assignment.i: assignment.cxx.i
+.PHONY : assignment.i
+
+# target to preprocess a source file
+assignment.cxx.i:
+	cd /home/setser/Tiny/build && $(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/assignment.cxx.i
+.PHONY : assignment.cxx.i
+
+assignment.s: assignment.cxx.s
+.PHONY : assignment.s
+
+# target to generate assembly for a file
+assignment.cxx.s:
+	cd /home/setser/Tiny/build && $(MAKE) -f parser/CMakeFiles/parser.dir/build.make parser/CMakeFiles/parser.dir/assignment.cxx.s
+.PHONY : assignment.cxx.s
+
 base.o: base.cxx.o
 .PHONY : base.o
 
@@ -244,6 +268,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... parser"
 	@echo "... rebuild_cache"
+	@echo "... assignment.o"
+	@echo "... assignment.i"
+	@echo "... assignment.s"
 	@echo "... base.o"
 	@echo "... base.i"
 	@echo "... base.s"

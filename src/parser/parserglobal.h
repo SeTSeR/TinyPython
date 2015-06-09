@@ -11,6 +11,15 @@
 		}
 };
 
+class Assignment: public NonTerminal
+{
+	public:
+		Assginment(): NonTerminal::NonTerminal()
+		{
+		}
+		int parse();
+}*/
+
 class Expression: public NonTerminal
 {
 	public:
@@ -18,7 +27,7 @@ class Expression: public NonTerminal
 		{
 		}
 		int parse();
-};*/
+};
 
 class Term: public NonTerminal
 {
