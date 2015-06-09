@@ -5,6 +5,7 @@ int Factor::parse()
 	int result = 0;
 	int negate = 0;
 	int notit = 0;
+//	std::cout << "Called factor" << std::endl;
 	if(Token1=='-')
 	{
 		negate = 1;

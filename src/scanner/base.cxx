@@ -56,7 +56,11 @@ Token* scan()
 {
 	Token* currenttoken = new Token('0', "0");
 	Token* whitetoken = new White(' ', " ");
+//	std::cout << "Before white" << std::endl;
+//	std::cout << Look << std::endl;
 	whitetoken->scan();
+//	std::cout << "After white" << std::endl;
+//	std::cout << Look << std::endl;
 	if(isDigit(Look))
 	{
 		currenttoken = new Number("0");
@@ -69,8 +73,10 @@ Token* scan()
 	}
 	else if(isOp(Look))
 	{
+//		std::cout << "Beginning" << std::endl;
 		currenttoken = new Operator('<', "<");
 		currenttoken = currenttoken->scan();
+//		std::cout << "End" << std::endl;
 	}
 	else
 	{

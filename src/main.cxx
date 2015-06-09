@@ -9,13 +9,13 @@ void printhelp()
 
 void interpret()
 {
-	Assignment* expr = new Assignment();
+	Relation* expr = new Relation();
 	std::cout << expr->parse() << std::endl;
-	while(Token1!='.')
+/*	while(Token1!='.')
 	{
 		scan();
 		std::cout << expr->parse() << std::endl;
-	}
+	}*/
 }
 
 int main(int argc, char** argv)

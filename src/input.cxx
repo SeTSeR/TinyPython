@@ -8,7 +8,7 @@ int programsize = 256;
 char Look = ' ';
 char Token1 = ' ';
 std::string Value = "";
-std::string program(programsize, ' ');
+//std::string program(programsize, ' ');
 std::ifstream filep;
 std::istream* pcin = &std::cin;
 
@@ -19,8 +19,9 @@ std::istream* pcin = &std::cin;
 
 char mygetcharx()
 {
-	char result = (-1);
+	char result;
 	*pcin >> result;
+//	std::cout << result << " ";
 	return result;
 }
 
@@ -43,15 +44,15 @@ void init(int mode, std::string filename)
 {
 	if(mode==0)
 	{
-		*pcin >> program;
-		Look = mygetchar();
+//		*pcin >> program;
+//		Look = mygetchar();
 		scan();
 	}
 	else if(mode==1)
 	{
 		filep.open(filename.c_str());
 		pcin = &filep;
-		*pcin >> program;
+//		*pcin >> program;
 		Look = mygetchar();
 		scan();
 	}

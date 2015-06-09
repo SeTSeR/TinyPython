@@ -24,10 +24,10 @@ class NonTerminal
 		}
 };
 
-class Assignment: public NonTerminal
+class Relation: public NonTerminal
 {
 	public:
-		Assignment(): NonTerminal::NonTerminal()
+		Relation(): NonTerminal::NonTerminal()
 		{
 		}
 		int parse();
