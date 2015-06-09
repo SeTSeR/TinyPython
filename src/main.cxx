@@ -24,6 +24,8 @@ int main(int argc, char** argv)
 		else
 		{
 			init(1, argv[1]);
+			Assignment* expr = new Assignment();
+			std::cout << expr->parse() << std::endl;
 		}
 	}
 }
