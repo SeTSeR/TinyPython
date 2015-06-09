@@ -1,0 +1,2 @@
+#!/bin/bash
+rm {.,src,src/scanner,src/parser,src/semantic,build}/{,.}*~

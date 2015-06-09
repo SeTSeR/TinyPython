@@ -9,5 +9,5 @@ int Assignment::parse()
 	Expression* expr = new Expression();
 	int result = expr->parse();
 	storevar(name, result);
-	return 0;
+	return readvar(name);
 }

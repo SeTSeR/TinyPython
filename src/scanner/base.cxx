@@ -24,7 +24,7 @@ int isOp(char c)
 
 int isWhite(char c)
 {
-	char whites[2] = {' ', '\t'};
+	char whites[3] = {' ', '\t', '\n'};
 	return inArray(c, whites);
 }
 
@@ -72,14 +72,10 @@ Token* scan()
 		currenttoken = new Operator('<', "<");
 		currenttoken = currenttoken->scan();
 	}
-	else if(Look=='(')
+	else
 	{
-		currenttoken = new Token('(', "(");
-		Look = mygetchar();
-	}
-	else if(Look==')')
-	{
-		currenttoken = new Token(')', ")");
+		std::string s(1, Look);
+		currenttoken = new Token(Look, s);
 		Look = mygetchar();
 	}
 	Token1 = currenttoken->token;

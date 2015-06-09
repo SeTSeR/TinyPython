@@ -7,13 +7,23 @@ void printhelp()
 	std::cout << "interpreter -h(--help) - print this help" << std::endl;
 }
 
+void interpret()
+{
+	Assignment* expr = new Assignment();
+	std::cout << expr->parse() << std::endl;
+	while(Token1!='.')
+	{
+		scan();
+		std::cout << expr->parse() << std::endl;
+	}
+}
+
 int main(int argc, char** argv)
 {
 	if(argc==1)
 	{
 		init(0, "None");
-		Assignment* expr = new Assignment();
-		std::cout << expr->parse() << std::endl;
+		interpret();
 	}
 	else
 	{
@@ -24,8 +34,7 @@ int main(int argc, char** argv)
 		else
 		{
 			init(1, argv[1]);
-			Assignment* expr = new Assignment();
-			std::cout << expr->parse() << std::endl;
+			interpret();
 		}
 	}
 }

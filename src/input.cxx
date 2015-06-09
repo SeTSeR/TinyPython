@@ -4,22 +4,37 @@
 #include "global.h"
 
 int programcounter = 0;
+int programsize = 256;
 char Look = ' ';
 char Token1 = ' ';
 std::string Value = "";
-std::string program = "";
+std::string program(programsize, ' ');
 std::ifstream filep;
 std::istream* pcin = &std::cin;
 
+/*void updatebuffer()
+{
+	*pcin >> program;
+}*/
+
+char mygetcharx()
+{
+	char result = (-1);
+	*pcin >> result;
+	return result;
+}
+
 char mygetchar()
 {
-	char result = '.';
-	try
+	char result;
+	result = mygetcharx();
+	if(result=='#')
 	{
-		result = program[programcounter++];
+		while(result!='\n') result = mygetcharx();
 	}
-	catch(std::exception& e)
+	if(result=='{')
 	{
+		while(result!='}') result = mygetcharx();
 	}
 	return result;
 }
