@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/interpreter.dir/main.o CMakeFiles/interpreter.dir/input.o CMakeFiles/interpreter.dir/errors.o  -o interpreter -rdynamic scanner/libscanner.so parser/libparser.so semantic/libsemantic.so -Wl,-rpath,/home/setser/Tiny/build/scanner:/home/setser/Tiny/build/parser:/home/setser/Tiny/build/semantic 
