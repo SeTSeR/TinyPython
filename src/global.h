@@ -24,10 +24,10 @@ class NonTerminal
 		}
 };
 
-class Expression: public NonTerminal
+class Assignment: public NonTerminal
 {
 	public:
-		Expression(): NonTerminal::NonTerminal()
+		Assignment(): NonTerminal::NonTerminal()
 		{
 		}
 		int parse();
