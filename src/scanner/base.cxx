@@ -70,6 +70,10 @@ Token* scan()
 	{
 		currenttoken = new Identifier("x");
 		currenttoken = currenttoken->scan();
+		for(int i = 0; i<keywordscount; i++)
+		{
+			if(currenttoken->value==tokens[i]->value) currenttoken = tokens[i];
+		}
 	}
 	else if(isOp(Look))
 	{

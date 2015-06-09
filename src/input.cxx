@@ -11,6 +11,8 @@ std::string Value = "";
 //std::string program(programsize, ' ');
 std::ifstream filep;
 std::istream* pcin = &std::cin;
+int keywordscount = 1;
+Token* tokens[1] = {new Keyword('i', "if")};
 
 /*void updatebuffer()
 {

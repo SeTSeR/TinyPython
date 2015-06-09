@@ -9,7 +9,7 @@
 		{
 			return 0;
 		}
-};
+};*/
 
 class Relation: public NonTerminal
 {
@@ -18,7 +18,7 @@ class Relation: public NonTerminal
 		{
 		}
 		int parse();
-}*/
+};
 
 class Assignment: public NonTerminal
 {
@@ -56,5 +56,25 @@ class Factor: public NonTerminal
 		int parse();
 };
 
+class IfStatement: public NonTerminal
+{
+	public:
+		IfStatement(): NonTerminal::NonTerminal()
+		{
+		}
+		int parse();
+};
+
+class ElseStatement: public NonTerminal
+{
+	public:
+		ElseStatement(): NonTerminal::NonTerminal()
+		{
+		}
+		int parse();
+};
+
+extern int executeelse;
 int toint(std::string);
+void skipblock();
 #endif

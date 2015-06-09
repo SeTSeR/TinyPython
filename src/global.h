@@ -14,9 +14,18 @@ class Token
 		}
 };
 
+class Keyword : public Token
+{
+	public:
+		Keyword(char a, std::string b) : Token(a, b)
+		{
+		}
+		Keyword* scan();
+};
+
 class NonTerminal
 {
-		public:
+	public:
 		NonTerminal();
 		virtual int parse()
 		{
@@ -24,10 +33,10 @@ class NonTerminal
 		}
 };
 
-class Relation: public NonTerminal
+class Block: public NonTerminal
 {
 	public:
-		Relation(): NonTerminal::NonTerminal()
+		Block(): NonTerminal::NonTerminal()
 		{
 		}
 		int parse();
@@ -36,6 +45,8 @@ class Relation: public NonTerminal
 extern int programcounter;
 extern char Look;
 extern char Token1;
+extern Token* tokens[];
+extern int keywordscount;
 extern std::string Value;
 
 void init(int mode, std::string filename);

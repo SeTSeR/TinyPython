@@ -38,4 +38,11 @@ class White : public Token
 		White* scan();
 };
 
+/*class Keyword : public Token
+{
+	public:
+		Keyword(char x, std::string b): Token(x, b){}
+		Keyword* scan();
+};*/
+
 #endif

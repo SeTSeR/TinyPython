@@ -9,7 +9,7 @@ void printhelp()
 
 void interpret()
 {
-	Relation* expr = new Relation();
+	Block* expr = new Block();
 	std::cout << expr->parse() << std::endl;
 /*	while(Token1!='.')
 	{
