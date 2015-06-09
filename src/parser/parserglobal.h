@@ -14,11 +14,11 @@
 class Assignment: public NonTerminal
 {
 	public:
-		Assginment(): NonTerminal::NonTerminal()
+		Assignment(): NonTerminal::NonTerminal()
 		{
 		}
 		int parse();
-}*/
+};*/
 
 class Expression: public NonTerminal
 {
