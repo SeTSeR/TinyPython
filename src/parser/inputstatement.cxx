@@ -2,7 +2,7 @@
 
 int InputStatement::parse()
 {
-	std::cout << "Called InputStatement" << std::endl;
+//	std::cout << "Called InputStatement" << std::endl;
 	scan();
 	if(Token1!='x') expected("Variable");
 	int result;

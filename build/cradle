@@ -1,13 +1,13 @@
-program name
+program cradle
 {
-	x = 3;
-	if(x>0)
+	input a;
+	input b;
+	if(a>b)
 	{
-		x = x - 1;
+		print a;
 	}
 	else
 	{
-		x = x + 1;
+		print b;
 	}
-	print x;
 }

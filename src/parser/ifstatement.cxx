@@ -11,9 +11,8 @@ int IfStatement::parse()
 	if(Token1!=')') expected(")");
 	scan();
 	Block* block = new Block((result)&&(IfStatement::mode));
-	std::cout << (result)&&(IfStatement::mode); 
 	block->parse();
-	executeelse = result;
+	executeelse = !result;
 	delete block;
 	delete rel;
 	return 0;
