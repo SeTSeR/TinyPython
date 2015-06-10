@@ -7,6 +7,7 @@ int Block::parse()
 	scan();
 	while(Token1!='}')
 	{
+		std::cout << Token1 << std::endl;
 		if(Token1=='x')
 		{
 			int temp = readvar(Value);
