@@ -59,6 +59,7 @@ Token* scan()
 //	std::cout << "Before white" << std::endl;
 //	std::cout << Look << std::endl;
 	whitetoken->scan();
+	delete whitetoken;
 //	std::cout << "After white" << std::endl;
 //	std::cout << Look << std::endl;
 	if(isDigit(Look))
@@ -90,5 +91,6 @@ Token* scan()
 	}
 	Token1 = currenttoken->token;
 	Value = currenttoken->value;
+//	std::cout << Look << " " << Token1 << " " << Value << std::endl;
 	return currenttoken;
 }

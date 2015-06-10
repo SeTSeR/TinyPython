@@ -49,5 +49,6 @@ int Relation::parse()
 			}
 			break;
 	}
+	delete expr;
 	return result;
 }

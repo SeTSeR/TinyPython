@@ -9,13 +9,13 @@ void printhelp()
 
 void interpret()
 {
-	Block* expr = new Block();
-	std::cout << expr->parse() << std::endl;
-/*	while(Token1!='.')
-	{
-		scan();
-		std::cout << expr->parse() << std::endl;
-	}*/
+	Program* expr = new Program();
+	expr->parse();
+}
+
+void stop()
+{
+	isStopped = 1;
 }
 
 int main(int argc, char** argv)
@@ -35,6 +35,7 @@ int main(int argc, char** argv)
 		{
 			init(1, argv[1]);
 			interpret();
+			end();
 		}
 	}
 }

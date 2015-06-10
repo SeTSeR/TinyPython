@@ -28,6 +28,7 @@ int Factor::parse()
 			scan();
 			Expression* expr = new Expression();
 			result = expr->parse();
+			delete expr;
 			if(Token1!=')') error("Scope hadn't been closed.");
 			break;
 	}

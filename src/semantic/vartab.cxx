@@ -2,8 +2,7 @@
 
 void storevar(std::string name, int value)
 {
-	if(vartab[name]==0) vartab[name] = value;
-	else error("This variable has been already defined");
+	vartab[name] = value;
 }
 
 int readvar(std::string name)

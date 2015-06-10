@@ -3,8 +3,9 @@
 int ElseStatement::parse()
 {
 	scan();
-	Block* block = new Block();
-	if(executeelse) block->parse();
-	else skipblock();
+	Block* block = new Block(executeelse&&(ElseStatement::mode));
+	std::cout << executeelse&&(ElseStatement::mode);
+	block->parse();
+	delete block;
 	return 0;
 }

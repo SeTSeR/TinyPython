@@ -11,6 +11,21 @@
 		}
 };*/
 
+class Block: public NonTerminal
+{
+	public:
+		Block(): NonTerminal::NonTerminal()
+		{
+		}
+		Block(int a): NonTerminal::NonTerminal()
+		{
+			Block::mode = a;
+		}
+		int parse();
+	private:
+		int mode;
+};
+
 class Relation: public NonTerminal
 {
 	public:
@@ -62,7 +77,13 @@ class IfStatement: public NonTerminal
 		IfStatement(): NonTerminal::NonTerminal()
 		{
 		}
+		IfStatement(int a): NonTerminal::NonTerminal()
+		{
+			IfStatement::mode = a;
+		}
 		int parse();
+	private:
+		int mode;
 };
 
 class ElseStatement: public NonTerminal
@@ -71,7 +92,43 @@ class ElseStatement: public NonTerminal
 		ElseStatement(): NonTerminal::NonTerminal()
 		{
 		}
+		ElseStatement(int a): NonTerminal::NonTerminal()
+		{
+			ElseStatement::mode = a;
+		}
 		int parse();
+	private:
+		int mode;
+};
+
+class PrintStatement: public NonTerminal
+{
+	public:
+		PrintStatement(): NonTerminal::NonTerminal()
+		{
+		}
+		PrintStatement(int a): NonTerminal::NonTerminal()
+		{
+			PrintStatement::mode = a;
+		}
+		int parse();
+	private:
+		int mode;
+};
+
+class InputStatement: public NonTerminal
+{
+	public:
+		InputStatement(): NonTerminal::NonTerminal()
+		{
+		}
+		InputStatement(int a): NonTerminal::NonTerminal()
+		{
+			InputStatement::mode = a;
+		}
+		int parse();
+	private:
+		int mode;
 };
 
 extern int executeelse;

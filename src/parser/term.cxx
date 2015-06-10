@@ -24,5 +24,6 @@ int Term::parse()
 				result&=fact->parse();
 		}
 	}
+	delete fact;
 	return result;
 }

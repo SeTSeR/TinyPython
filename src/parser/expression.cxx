@@ -28,5 +28,6 @@ int Expression::parse()
 				result^=term->parse();
 		}
 	}
+	delete term;
 	return result;
 }

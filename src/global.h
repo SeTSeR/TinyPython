@@ -33,10 +33,10 @@ class NonTerminal
 		}
 };
 
-class Block: public NonTerminal
+class Program: public NonTerminal
 {
 	public:
-		Block(): NonTerminal::NonTerminal()
+		Program(): NonTerminal::NonTerminal()
 		{
 		}
 		int parse();
@@ -48,8 +48,10 @@ extern char Token1;
 extern Token* tokens[];
 extern int keywordscount;
 extern std::string Value;
+extern int isStopped;
 
 void init(int mode, std::string filename);
+void end();
 char mygetchar();
 Token* scan();
 void printtoken(Token* token);

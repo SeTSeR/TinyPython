@@ -8,6 +8,7 @@ int Assignment::parse()
 	scan();
 	Expression* expr = new Expression();
 	int result = expr->parse();
+	delete expr;
 	storevar(name, result);
 	return readvar(name);
 }
