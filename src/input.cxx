@@ -3,7 +3,7 @@
 
 #include "global.h"
 
-const int keywordscount = 6;
+const int keywordscount = 7;
 
 int programcounter = 0;
 char Look = ' ';
@@ -13,7 +13,7 @@ std::string* program;
 std::ifstream filep;
 std::istream* pcin = &std::cin;
 int isStopped = 0;
-Token* tokens[keywordscount] = {new Keyword('i', "if"), new Keyword('e', "else"), new Keyword('w', "while"), new Keyword('p', "program"), new Keyword('?', "input"), new Keyword('!', "print")};
+Token* tokens[keywordscount] = {new Keyword('i', "if"), new Keyword('e', "else"), new Keyword('w', "while"), new Keyword('d', "do"), new Keyword('p', "program"), new Keyword('?', "input"), new Keyword('!', "print")};
 
 void updatebuffer()
 {

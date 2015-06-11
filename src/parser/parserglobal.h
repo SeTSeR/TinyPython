@@ -116,6 +116,21 @@ class WhileStatement: public NonTerminal
 		int mode;
 };
 
+class DoWhileStatement: public NonTerminal
+{
+	public:
+		DoWhileStatement(): NonTerminal::NonTerminal()
+		{
+		}
+		DoWhileStatement(int a): NonTerminal::NonTerminal()
+		{
+			DoWhileStatement::mode = a;
+		}
+		int parse();
+	private:
+		int mode;
+};
+
 class PrintStatement: public NonTerminal
 {
 	public:

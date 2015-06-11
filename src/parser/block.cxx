@@ -40,6 +40,12 @@ int Block::parse()
 			whilestat->parse();
 			delete whilestat;
 		}
+		else if(Token1=='d')
+		{
+			DoWhileStatement* dostat = new DoWhileStatement(Block::mode);
+			dostat->parse();
+			delete dostat;
+		}
 		else if(Token1=='?')
 		{
 			InputStatement* instat = new InputStatement(Block::mode);

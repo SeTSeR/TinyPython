@@ -28,4 +28,5 @@ int WhileStatement::parse()
 		whileblock->parse();
 		delete whileblock;
 	}
+	return 0;
 }
