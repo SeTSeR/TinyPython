@@ -6,7 +6,7 @@ int Relation::parse()
 	Expression* expr = new Expression();
 	int arg1 = expr->parse();
 //	std::cout << "Returned in relation" << std::endl;
-	int result = 0;
+	int result = arg1;
 	switch(Token1)
 	{
 		case '>':
@@ -36,6 +36,11 @@ int Relation::parse()
 				result = (arg1<(expr->parse()));
 			}
 			else if(Value=="<=")
+			{
+				scan();
+				result = (arg1<=(expr->parse()));
+			}
+			else if(Value=="<>")
 			{
 				scan();
 				result = (arg1<=(expr->parse()));

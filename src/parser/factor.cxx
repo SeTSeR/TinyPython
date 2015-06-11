@@ -30,6 +30,7 @@ int Factor::parse()
 			result = expr->parse();
 			delete expr;
 			if(Token1!=')') error("Scope hadn't been closed.");
+			scan();
 			break;
 	}
 	if(negate) result*=(-1);

@@ -5,3 +5,4 @@
 /build/parser/*
 /build/scanner/*
 /build/semantic/*
+/build/interpreter

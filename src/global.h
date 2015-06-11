@@ -46,12 +46,14 @@ extern int programcounter;
 extern char Look;
 extern char Token1;
 extern Token* tokens[];
-extern int keywordscount;
+extern const int keywordscount;
 extern std::string Value;
 extern int isStopped;
 
 void init(int mode, std::string filename);
 void end();
+int mark();
+void switchpointer(int pos);
 char mygetchar();
 Token* scan();
 void printtoken(Token* token);

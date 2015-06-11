@@ -101,6 +101,21 @@ class ElseStatement: public NonTerminal
 		int mode;
 };
 
+class WhileStatement: public NonTerminal
+{
+	public:
+		WhileStatement(): NonTerminal::NonTerminal()
+		{
+		}
+		WhileStatement(int a): NonTerminal::NonTerminal()
+		{
+			WhileStatement::mode = a;
+		}
+		int parse();
+	private:
+		int mode;
+};
+
 class PrintStatement: public NonTerminal
 {
 	public:

@@ -3,6 +3,8 @@
 
 #include "global.h"
 
+const int keywordscount = 6;
+
 int programcounter = 0;
 char Look = ' ';
 char Token1 = ' ';
@@ -10,9 +12,8 @@ std::string Value = "";
 std::string* program;
 std::ifstream filep;
 std::istream* pcin = &std::cin;
-int keywordscount = 5;
 int isStopped = 0;
-Token* tokens[5] = {new Keyword('i', "if"), new Keyword('e', "else"), new Keyword('p', "program"), new Keyword('?', "input"), new Keyword('!', "print")};
+Token* tokens[keywordscount] = {new Keyword('i', "if"), new Keyword('e', "else"), new Keyword('w', "while"), new Keyword('p', "program"), new Keyword('?', "input"), new Keyword('!', "print")};
 
 void updatebuffer()
 {
@@ -51,6 +52,17 @@ char mygetchar()
 		while(result!='\n') result = mygetcharx();
 	}
 	return result;
+}
+
+int mark()
+{
+	return programcounter;
+}
+
+void switchpointer(int pos)
+{
+	programcounter = pos;
+	scan();
 }
 
 void init(int mode, std::string filename)

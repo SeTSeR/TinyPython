@@ -2,12 +2,11 @@
 
 int Block::parse()
 {
-	std::cout << "Called block" << std::endl;
+//	std::cout << "Called block" << std::endl;
 	if(Token1!='{') expected("{");
 	scan();
 	while(Token1!='}')
 	{
-		std::cout << Token1 << std::endl;
 		if(Token1=='x')
 		{
 			int temp = readvar(Value);
@@ -21,19 +20,25 @@ int Block::parse()
 		{
 			IfStatement* ifstat = new IfStatement(mode);
 			ifstat->parse();
-			std::cout << "Returned in block1" << std::endl;
+//			std::cout << "Returned in block1" << std::endl;
 			delete ifstat;
 			if(Token1=='e')
 			{
 				ElseStatement* elsestat = new ElseStatement(mode);
 				elsestat->parse();
-				std::cout << "Returned in block2" << std::endl;
+//				std::cout << "Returned in block2" << std::endl;
 				delete elsestat;
 			}
 		}
 		else if(Token1=='e')
 		{
 			error("Unexpected else without if");
+		}
+		else if(Token1=='w')
+		{
+			WhileStatement* whilestat = new WhileStatement(Block::mode);
+			whilestat->parse();
+			delete whilestat;
 		}
 		else if(Token1=='?')
 		{

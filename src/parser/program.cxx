@@ -9,6 +9,7 @@ int Program::parse()
 	if(Token1!='x') expected("Program name");
 	scan();
 	Block* block = new Block(1);
+//	std::cout << "From program ";
 	block->parse();
 	return 0;
 }
