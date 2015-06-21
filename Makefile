@@ -13,10 +13,10 @@ clean:
 	rm $(TARGET) *.o && $(MAKE) -C parser clean && $(MAKE) -C scanner clean && $(MAKE) -C semantic clean
 
 install:
-	$(INSTALL) $(TARGET) $(DESTDIR)$(BINDIR)/$(TARGET) && $(MAKE) -C parser PREFIX=../$(PREFIX) install && $(MAKE) -C scanner PREFIX=../$(PREFIX) install && $(MAKE) -C semantic PREFIX=../$(PREFIX) install
+	$(INSTALL) $(TARGET) $(DESTDIR)$(BINDIR)/$(TARGET) && $(MAKE) -C parser PREFIX=$(PREFIX) install && $(MAKE) -C scanner PREFIX=$(PREFIX) install && $(MAKE) -C semantic PREFIX=$(PREFIX) install
 
 uninstall:
-	$(UNINSTALL) $(DESTDIR)$(BINDIR)/$(TARGET) && $(MAKE) -C parser PREFIX=../$(PREFIX) uninstall && $(MAKE) -C scanner PREFIX=../$(PREFIX) uninstall && $(MAKE) -C semantic PREFIX=../$(PREFIX) uninstall
+	$(UNINSTALL) $(DESTDIR)$(BINDIR)/$(TARGET) && $(MAKE) -C parser PREFIX=$(PREFIX) uninstall && $(MAKE) -C scanner PREFIX=$(PREFIX) uninstall && $(MAKE) -C semantic PREFIX=$(PREFIX) uninstall
 
 $(TARGET):	$(REQUIREMENTS) $(LIBRARIES)
 	$(CXX) $(CXXFLAGS) $(REQUIREMENTS) -o interpreter
