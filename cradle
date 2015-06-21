@@ -1,0 +1,24 @@
+program cradle
+{
+#	input x;
+#	input y;
+#	while(x&y)
+#	{
+#		if(x>y)
+#		{
+#			x = x - y;
+#		}
+#		else
+#		{
+#			y = y - x;
+#		}
+#		print x;
+#		print y;
+#	}
+	x = 5;
+	do
+	{
+		print x;
+		x--;
+	} while(x>0);
+}
