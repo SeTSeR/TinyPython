@@ -22,7 +22,7 @@ $(TARGET):	$(REQUIREMENTS) $(LIBRARIES)
 	$(CXX) $(CXXFLAGS) $(REQUIREMENTS) -o interpreter
 
 errors.o:	errors.cxx
-	$(CXX) $(CXXFLAGS)-c errors.cxx -o errors.o
+	$(CXX) $(CXXFLAGS) -c errors.cxx -o errors.o
 
 input.o:	input.cxx
 	$(CXX) $(CXXFLAGS) -c input.cxx -o input.o
